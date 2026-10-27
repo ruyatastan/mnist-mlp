@@ -63,7 +63,7 @@ Okul numaram `24120205010` kâğıda yazıldı, fotoğrafı çekildi ve her raka
 - **Test sonucu:** Test accuracy (0.9787) validation accuracy (0.9774) ile çok yakın, yani model görmediği MNIST verisinde de tutarlı çalışıyor.
 - **Gerçek el yazısı:** Model kendi el yazımdaki 11 rakamın 10'unu doğru tahmin etti. Hata yapılan rakam 4 oldu ve model bunu %88 güvenle 6 olarak tahmin etti. Model yanlış tahminlerinde de yüksek güven gösterebiliyor, bu yüzden güven yüzdesi doğruluğun garantisi değil.
 - **Distribution shift:** MNIST ile benim yazım arasında kalem kalınlığı, yazı stili, fotoğraf koşulları ve ön işleme farkları var. Bu fark nedeniyle model gerçek dünya verisinde MNIST test başarısından daha düşük ve daha az güvenilir sonuç verebilir. Sadece 11 örnekle test yapıldığı için %90,9 değeri istatistiksel olarak güvenilir bir ölçü değildir, tek bir rakam sonucu yaklaşık 9 puan değiştirir.
-- **Olası neden (varsayım):** 4'ün 6 olarak tahmin edilmesinde çizgi kalınlaştırma sırasında rakamın üst kısmının dolgunlaşmasının etkili olmuş olabileceğini düşünüyorum, ancak bunu ayrıca test etmedim.
+- **Olası neden:** Modelin yanlış tahmin ettiği 4 için ilk üç tahmini şöyle: 6 (%88,3), 4 (%11,3), 0 (%0,3). Yani doğru sınıf ikinci sırada geldi ve model 4 ile 6 arasında kaldı. Çizgi kalınlaştırma sırasında 4'ün üst kısmının dolgunlaşıp kapanmasının bu karışıklığa yol açmış olabileceğini düşünüyorum. Kalınlaştırma miktarını değiştirerek bunu ayrıca denemedim.
 
 ## Nasıl Çalıştırılır
 1. `mnist_mlp.ipynb` dosyasını Google Colab'da açın.
