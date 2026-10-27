@@ -9,7 +9,7 @@ MNIST veri seti ile CNN kullanmadan, sıfırdan eğitilmiş bir MLP modeli geli�
 
 ## Dosyalar
 - `mnist_mlp.ipynb`: Tüm kod (veri hazırlama, eğitim, test, kendi rakamlarım)
-- `loss_accuracy_grafik.png`: Eğitim sürecindeki loss ve accuracy grafikleri
+- `loss_accuracy_grafik kopyası.png`: Eğitim sürecindeki loss ve accuracy grafikleri
 - `IMG_3374.png`: Okul numaramın orijinal fotoğrafı
 - `my_digits/`: MNIST formatına çevrilmiş rakamlar ve tahmin sonuçları
 
