@@ -1,6 +1,7 @@
 # MNIST ile MLP Tabanlı El Yazısı Rakam Tanıma
 
 **Ad Soyad:** Rüya Taştan
+
 **Öğrenci No:** 24120205010
 
 ## Proje Hakkında
@@ -44,7 +45,7 @@ MNIST'in 60.000'lik eğitim setinden 10.000'i validation için ayrıldı. 10.000
 | Test accuracy | 0.9787 |
 | Eğitim süresi | 156.9 saniye |
 
-![Loss ve Accuracy Grafikleri](loss_accuracy_grafik.png)
+![Loss ve Accuracy Grafikleri](loss_accuracy_grafik%20kopyası.png)
 
 ## Kendi El Yazım ile Test
 Okul numaram `24120205010` kâğıda yazıldı, fotoğrafı çekildi ve her rakam ayrı ayrı MNIST formatına dönüştürüldü (gri tonlama, gölge düzeltme, çizgi kalınlaştırma, 28×28, siyah zemin üzerine beyaz rakam, MNIST ile aynı normalizasyon).
